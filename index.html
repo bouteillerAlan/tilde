@@ -42,9 +42,9 @@
   };
 
   const COMMANDS = new Map([
-    ['m', { name: 'Mail', url: 'https://mail.proton.me/u/0/' }],
-    ['c', { name: 'Calendar', url: 'https://calendar.proton.me/u/0/' }],
-    ['d', { name: 'Drive', url: 'https://drive.proton.me/u/0/' }],
+    ['m', { name: 'Mail', url: 'https://mail.proton.me/u/0/', searchTemplate: '/search?q={}', suggestions: ['mail.proton.me/u/0/', 'mail.google.com/mail/u/0/'] }],
+    ['c', { name: 'Calendar', url: 'https://calendar.proton.me/u/0/', searchTemplate: '/search?q={}', suggestions: ['calendar.proton.me/u/0/', 'calendar.google.com/calendar/u/0/r'] }],
+    ['d', { name: 'Drive', url: 'https://drive.proton.me/u/0/', searchTemplate: '/search?q={}', suggestions: ['https://drive.proton.me/u/0/', 'drive.google.com/drive/u/0/'] }],
     ['g', { name: 'GitHub', url: 'https://github.com' }],
     ['n', { name: 'Notion', url: 'https://www.notion.so' }],
     ['a', { name: 'Archlinux', url: 'https://archlinux.org' }],
